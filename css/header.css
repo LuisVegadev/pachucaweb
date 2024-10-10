@@ -20,6 +20,9 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  left: -100%;
+  position: relative;
+  transition: 0.8s ease-in-out all;
 }
 .header .nav-menu {
   width: 100%;
@@ -79,3 +82,4 @@
 .nav-menu li:hover .submenu li a {
   padding: 8px 12px; /* Espacio dentro del submenú */
 }
+
