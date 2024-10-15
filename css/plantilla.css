@@ -13,20 +13,32 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px;
   text-align: center;
-  height: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
 .barra > h1 {
   font-family: "Kanit";
   color: aliceblue;
 }
+.nav-plantillas{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
 .card {
-  width: 100%;
+  width: 90%;
   height: 350px;
   border-radius: 10px;
-  margin: 10px 0;
+  margin: 10px 10px;
   position: relative;
   overflow: hidden;
   border: #2a5298 5px solid;
+}
+.card>.card-info{
+      left: 10px;
+      top: 10px;
 }
 .card>a{
     position: absolute;
@@ -43,6 +55,7 @@
 }
 .card>a:hover{
     background-color: rgb(124, 51, 233);
+    padding: 15px;
 }
 .card-info {
   position: absolute;
@@ -54,4 +67,28 @@
   position: absolute;
   z-index: 100;
   height: fit-content;
+}
+section{
+  width: 100%;
+  background-color: #1e3c72;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-jugadores{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #2a5298;
+  flex-wrap: wrap;
+}
+.card-jugador{
+  min-width: 300px;
+  height: 450px;
+  background-color: aliceblue;
+  margin: 10px 10px;
+  border-radius: 10px;
 }
