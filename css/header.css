@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 .header {
   background: #1e3c72; /* fallback for old browsers */
   background: -webkit-linear-gradient(

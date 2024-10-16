@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap');
 .barra {
   background: #1e3c72; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -68,13 +69,42 @@
   z-index: 100;
   height: fit-content;
 }
+.nav-pag{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.nav-pag>li{
+  list-style: none;
+}
+.nav-pag>li>a{
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 1.5rem;
+  color: #1e3c72;
+  padding: 3px;
+  transition: 0.5s all ease;
+  border-radius: 3px;
+}
+.nav-pag>li>a:hover{
+  background-color: #2a5298;
+  color: aliceblue;
+}
 section{
   width: 100%;
-  background-color: #1e3c72;
+  background-color: #2a5298;
   height: auto;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+section>h2{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: aliceblue;
 }
 .cards-jugadores{
   width: 100%;
@@ -86,9 +116,71 @@ section{
   flex-wrap: wrap;
 }
 .card-jugador{
+  position: relative;
   min-width: 300px;
+  max-width: 350px;
   height: 450px;
   background-color: aliceblue;
   margin: 10px 10px;
   border-radius: 10px;
+  overflow: hidden;
+}
+.card-jugador img{
+  width: 100%;
+  position: absolute;
+  height: 450px;
+  z-index: 100;
+}
+.card-data-player{
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  background-color: #2a529788;
+  padding: 15px;
+  bottom: -120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s all;
+}
+.num-player{
+  position: absolute;
+  z-index: 200;
+  font-family: 'Anton';
+  font-size: 3rem;
+  color: #2a5298;
+  right: 3px;
+  top: 3px;
+}
+.card-data-player h2{
+  color: aliceblue;
+  font-size: 2.3rem;
+}
+.card-data-player h3{
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+.card-data-player *{
+  margin: 4px;
+}
+.position-player{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  border-bottom: #c4cfe188 1px solid;
+}
+.card-data-player>.stadistics-player{
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  font-style: oblique;
+  font-family: 'Oswald';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-jugador:hover .card-data-player{
+  bottom: 0;
 }
