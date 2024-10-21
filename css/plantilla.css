@@ -22,6 +22,9 @@
   font-family: "Kanit";
   color: aliceblue;
 }
+.barra>img{
+  width: 80px;
+}
 .nav-plantillas{
       width: 100%;
       display: flex;
@@ -40,6 +43,8 @@
 .card>.card-info{
       left: 10px;
       top: 10px;
+      color: aliceblue;
+      background-color: #2a5298;
 }
 .card>a{
     position: absolute;
@@ -117,9 +122,9 @@ section>h2{
 }
 .card-jugador{
   position: relative;
-  min-width: 300px;
+  min-width: 250px;
   max-width: 350px;
-  height: 450px;
+  height: 275px;
   background-color: aliceblue;
   margin: 10px 10px;
   border-radius: 10px;
@@ -128,7 +133,7 @@ section>h2{
 .card-jugador img{
   width: 100%;
   position: absolute;
-  height: 450px;
+  height: 275px;
   z-index: 100;
 }
 .card-data-player{
@@ -137,7 +142,7 @@ section>h2{
   width: 100%;
   background-color: #2a529788;
   padding: 15px;
-  bottom: -120px;
+  bottom: -60px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -150,19 +155,16 @@ section>h2{
   font-family: 'Anton';
   font-size: 3rem;
   color: #2a5298;
-  right: 3px;
+  right: 20px;
   top: 3px;
 }
 .card-data-player h2{
   color: aliceblue;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 .card-data-player h3{
   color: aliceblue;
   font-size: 1.3rem;
-}
-.card-data-player *{
-  margin: 4px;
 }
 .position-player{
   display: block;
