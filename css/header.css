@@ -184,7 +184,11 @@ html{
 .nav-menu li:hover .submenu li a {
   padding: 8px 12px; /* Espacio dentro del submenú */
 }
-
+@media (min-width:0px) and (max-width:599px) {
+  .header-desktop{
+    display: none;
+  }
+}
 @media (min-width: 600px) and (max-width:900px){
   .panel-btn{
     display: none;
