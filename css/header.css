@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,84 @@
 }
 html{
   scroll-behavior: smooth;
+  
+}
+.header-desktop{
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  background: #1e3c72; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a5298,
+    #1e3c72
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a5298,
+    #1e3c72
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-desktop>.logo-socialmedia{
+  width: 100%;
+}
+.header-desktop>.logo-socialmedia>.logo{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.header-desktop>.logo-socialmedia>.logo h1{
+  color: aliceblue;
+  letter-spacing: 5px;
+  margin-left: 20px;
+}
+.header-desktop>.logo-socialmedia>.logo>img{
+  width: 75px;
+  z-index: 1000;
+}
+.header-desktop>.logo-socialmedia>.socialmedia{
+
+}
+.nav-menu-desktop{
+  width: 100%;
+}
+.nav-menu-desktop ul{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 3px;
+}
+.nav-menu-desktop ul li{
+  margin: 10px 30px;
+  position: relative;
+}
+.nav-menu-desktop ul li a{
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 1.5rem;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+.nav-menu-desktop ul li a:hover{
+  color: #2a5298;
+  background-color: aliceblue;
+}
+.nav-menu-desktop ul li:hover .submenu-menu{
+  display: inline-block;
+}
+.nav-menu-desktop ul li .submenu-menu{
+  display: none;
+  position: absolute;
+  background-color: #2a5298;
+  position: absolute;
+  width: 300px;
 }
 .panel-btn{
   position: fixed;
@@ -110,9 +189,15 @@ html{
   .panel-btn{
     display: none;
   }
+  .header-mobile{
+    display: none;
+  }
 }
 @media (min-width:901px) {
   .panel-btn{
+    display: none;
+  }
+  .header-mobile{
     display: none;
   }
 }
